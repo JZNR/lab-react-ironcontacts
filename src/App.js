@@ -13,7 +13,7 @@ function App() {
   function handleRandomContact() {
     const randomNumber = Math.floor(Math.random() * (52 - 6) + 6);
     const newContact = contactsData[randomNumber];
-    setContacts(prevState => ([...prevState, newContact]))
+    setContacts([...contacts, newContact])
 }
   function sortByPopularity() {
     const newArray = [...contacts]
